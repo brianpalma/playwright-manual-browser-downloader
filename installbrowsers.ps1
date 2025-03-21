@@ -99,7 +99,7 @@ try {
             Write-Host "Folder created: $path" -ForegroundColor Cyan
 
             # Download the file
-            Write-Host "Downloading $variableUrl to $filePath..." -ForegroundColor Green
+            Write-Host "Downloading $browserName to $filePath..." -ForegroundColor Green
             Invoke-WebRequest -Uri $browserUrl -OutFile $filePath
             Write-Host "Download completed: $filePath" -ForegroundColor Cyan
             try {
