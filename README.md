@@ -3,7 +3,7 @@
 # Playwright Manual Browser Downloader Script
 
 ## Overview
-This project contains a PowerShell script (`installbrowsers.ps1`) designed to manually install the required browsers for Playwright testing. The script performs various tasks including checking for user input, downloading browser files, and managing installation directories.
+This project contains a PowerShell script (`installbrowsers.ps1`) designed to manually install the required browsers for Playwright testing. The script performs various tasks including checking for user input, downloading browser files, and managing installation directories. This script simplifies the process of installing the browsers needed for Playwright testing when for some reason downloading the browsers cannot be done with the usual command.
 
 ## Files
 - **installbrowsers.ps1**: A PowerShell script that installs Playwright browsers. It checks for the `--all` argument, executes a Playwright command to gather browser information, prompts the user for installation confirmation, creates necessary directories, downloads ZIP files of the browsers, extracts them, and cleans up the ZIP files afterward.
@@ -35,4 +35,4 @@ This project contains a PowerShell script (`installbrowsers.ps1`) designed to ma
 - The script logs any errors encountered during execution to `installbrowsers.log`. Check this file for details if an error occurs.
 
 ## Conclusion
-This script simplifies the process of installing browsers required for Playwright testing, providing a user-friendly interface for managing browser installations.
+This script streamlines the installation of the browsers required for Playwright testing, particularly in scenarios where the standard installation command fails. For example, when encountering an error like `Error: self signed certificate in certificate chain` while running `npx playwright install`
