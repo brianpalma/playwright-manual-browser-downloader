@@ -1,6 +1,6 @@
 # playwright-manual-browser-downloader
 
-# Playwright Browser Installation Script
+# Playwright Manual Browser Downloader Script
 
 ## Overview
 This project contains a PowerShell script (`installbrowsers.ps1`) designed to manually install the required browsers for Playwright testing. The script performs various tasks including checking for user input, downloading browser files, and managing installation directories.
